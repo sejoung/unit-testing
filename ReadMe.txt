@@ -1,5 +1,7 @@
 # 단위 테스트(생산성과 품질을 위한 단위 테스트 원칙과 패턴)
 
+Rider에 mono를 설치해야 한다.
+
 To run integration tests:
 
 1. Use the script in DatabaseGenerationScript.sql to create the database.
