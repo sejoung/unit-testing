@@ -17,7 +17,7 @@ namespace Book.Chapter2.Listing1
 
             // Assert
             Assert.True(success);
-            Assert.Equal(5, store.GetInventory(Product.Shampoo));
+            Assert.Equal(5, store.GetInventory(Product.Shampoo)); // 상점 제품 다섯 개 감소
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace Book.Chapter2.Listing1
 
             // Assert
             Assert.False(success);
-            Assert.Equal(10, store.GetInventory(Product.Shampoo));
+            Assert.Equal(10, store.GetInventory(Product.Shampoo)); // 상점 제품 감소 없음
         }
     }
 }

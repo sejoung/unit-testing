@@ -20,7 +20,7 @@ namespace Book.Chapter2.Listing2
 
             // Assert
             Assert.True(success);
-            storeMock.Verify(x => x.RemoveInventory(Product.Shampoo, 5), Times.Once);
+            storeMock.Verify(x => x.RemoveInventory(Product.Shampoo, 5), Times.Once); //인벤토리 삭제가 한번 이로어진다
         }
 
         [Fact]
@@ -38,7 +38,7 @@ namespace Book.Chapter2.Listing2
 
             // Assert
             Assert.False(success);
-            storeMock.Verify(x => x.RemoveInventory(Product.Shampoo, 5), Times.Never);
+            storeMock.Verify(x => x.RemoveInventory(Product.Shampoo, 5), Times.Never); // 인벤토리 삭제가 안일어난다
         }
     }
 }
