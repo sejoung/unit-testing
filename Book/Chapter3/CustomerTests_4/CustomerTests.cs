@@ -48,7 +48,8 @@ namespace Book.Chapter3.CustomerTests_4
         [Fact]
         public void Purchase_succeeds_when_enough_inventory()
         {
-            /* ... */
+            /* 여기서 database 사용 */
+            _database.Dispose();
         }
     }
 
