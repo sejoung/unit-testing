@@ -10,7 +10,7 @@ namespace Book.Chapter3.FluentAssertions_1
         {
             double first = 10;
             double second = 20;
-            var sut = new Calculator();
+            var sut = new Calculator(); // System Under Test
 
             double result = sut.Sum(first, second);
 
