@@ -334,7 +334,7 @@ namespace Book.Chapter9.V2
 
     public class IntegrationTests
     {
-        private const string ConnectionString = @"Server=.\Sql;Database=IntegrationTests;Trusted_Connection=true;";
+        private const string ConnectionString = @"server=(local);User Id=sa;Password=eksdnlxptmxm1@;Database=IntegrationTests;";
 
         [Fact]
         public void Changing_email_from_corporate_to_non_corporate()

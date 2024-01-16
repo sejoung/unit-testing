@@ -334,7 +334,7 @@ namespace Book.Chapter9.V1
 
     public class IntegrationTests
     {
-        private const string ConnectionString = @"Server=.\Sql;Database=IntegrationTests;Trusted_Connection=true;";
+        private const string ConnectionString = @"server=(local);User Id=sa;Password=eksdnlxptmxm1@;Database=IntegrationTests;";
 
         [Fact]
         public void Changing_email_from_corporate_to_non_corporate()
@@ -431,12 +431,12 @@ namespace Book.Chapter9.V1
 
                 string query = user.UserId == 0 ? insertQuery : updateQuery;
                 int userId = connection.Query<int>(query, new
-                {
-                    user.Email,
-                    user.UserId,
-                    user.IsEmailConfirmed,
-                    Type = (int)user.Type
-                })
+                    {
+                        user.Email,
+                        user.UserId,
+                        user.IsEmailConfirmed,
+                        Type = (int)user.Type
+                    })
                     .Single();
 
                 user.UserId = userId;
